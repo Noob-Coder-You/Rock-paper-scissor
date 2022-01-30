@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <script defer src="/app.js"></script>
+    <style>
+      img {
+        max-width: 100px;
+      }
+      .container {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btns-container">
+        <h1>Choose Your Move</h1>
+        <div class="btns">
+          <button option data-game="Rock">
+            <img src="/imgs/Rock.png" alt="" />
+            <h2>Rock</h2>
+          </button>
+          <button option data-game="Paper">
+            <img src="/imgs/Paper.png" alt="" />
+            <h2>Paper</h2>
+          </button>
+          <button option data-game="Scissor">
+            <img src="/imgs/Scissor.png" alt="" />
+            <h2>Scissor</h2>
+          </button>
+        </div>
+      </div>
+      <div class="pc">
+        <h1>Computer Move</h1>
+        <button>
+          <img src="/imgs/mark.png" alt="" />
+          <h2>?</h2>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Winner is: <span class="winner"></span></h2>
+    </div>
+  </body>
+</html>
